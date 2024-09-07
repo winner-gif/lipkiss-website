@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E55F97;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    padding: 0;
+}
+
+ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    color: white;
+}
+
+li :hover {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    justify-content: left;
+}
+
+.icon {
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+
+
+
+input {
+    width: 50%;
+    padding: 15px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 3px;
+    color: white;
+}
+
+.expiration input {
+    width: 117%;
+}
+
+.expiration {
+    display: flex;
+    gap: 9rem;
+
+}
+
+.button-checkout {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    padding-left: 220px;
+    padding-right: 220px;
+    margin-top: 2rem;
+    border-radius: 50px;
+    border: none;
+}
+
+.payment {
+    margin-bottom: 2rem;
+}
+
+.card-details {
+    color: white;
+    margin-top: 2rem;
+}
+
+.checkout {
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.fa-brands{
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 110px;
+    margin-top: 2rem;
+}
+.sign-up{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    padding-left: 220px;
+    padding-right: 220px;
+    margin-top: 1rem;
+    border-radius: 50px;
+    border: none;
+    margin-left: 30px;
+}
+.sign{
+    margin-left: 220px;
+    margin-top: 2rem;
+    color: black;
+    font-weight: bold;
+}
+.Account{
+color: white;
+}
+span{
+    color: black;
+    font-weight: bold;
+}
+.create {
+    margin-bottom: 2rem;
+}
+.already{
+    margin-bottom: 2rem;
+}
