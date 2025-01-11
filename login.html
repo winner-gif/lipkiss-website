@@ -13,11 +13,14 @@
   <body>
     <div class="Container">
       <nav>
-        <ul>
+        <ul class="nav-link">
           <li><a href="shop.html">Shop</a></li>
           <li><a href="cart.html">Cart</a></li>
           <li><a href="checkout.html">Checkout</a></li>
         </ul>
+        <div class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
         <a href="index.html"> <img src="./Frame 72.png" alt="" /></a>
         <div class="icon">
           <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
@@ -43,13 +46,21 @@
         </div>
        <button class="sign-up">Sign Up</button>
        <p class="sign">or sign up with</p>
-       <ul>
+       <ul class="fabrand">
         <li><i class="fa-brands fa-google"></i></li>
         <li><i class="fa-brands fa-apple"></i></li>
         <li><i class="fa-brands fa-facebook"></i></li>
        </ul>
       </div>
     </div>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navLink = document.querySelector(".nav-link");
+
+      hamburger.addEventListener("click", function () {
+        navLink.classList.toggle("show-nav");
+      });
+    </script>
     </body>
     </html>
     

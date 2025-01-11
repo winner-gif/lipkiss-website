@@ -13,11 +13,14 @@
   <body>
     <div class="Container">
       <nav>
-        <ul>
+        <ul class="nav-link">
           <li><a href="shop.html">Shop</a></li>
           <li><a href="cart.html">Cart</a></li>
           <li><a href="checkout.html">Checkout</a></li>
         </ul>
+        <div class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
         <a href="index.html"> <img src="./Frame 72.png" alt="" /></a>
         <div class="icon">
           <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
@@ -37,16 +40,20 @@
         </div>
         <div class="section-image">
           <div>
-            <img src="./Frame 3.png" alt="" width="200px" />
-            <p>lippy cherry</p>
-            <p>$2,000.00</p>
-            <button>Add to cart</button>
+            <img src="./Frame 3.png" alt="" />
+            <div>
+              <p>lippy cherry</p>
+              <p>$2,000.00</p>
+              <button>Add to cart</button>
+            </div>
           </div>
           <div>
             <img src="./j9.png" alt="" width="200px" />
-            <p>lippy cherry</p>
-            <p>$2,000.00</p>
-            <button>Add to cart</button>
+            <div>
+              <p>lippy cherry</p>
+              <p>$2,000.00</p>
+              <button>Add to cart</button>
+            </div>
           </div>
           <div>
             <img src="./Rectangle 4.png" alt="" width="200px" />
@@ -79,15 +86,16 @@
       <div class="content-one">
         <section class="content">
           <div class="image">
-            <img src="./Rectangle 5.png" alt="" width="50%" height="500px" />
-            <h2 class="glossy">GLOSSY KISS COLLECTION NEW RELEASE </h2>
+            <div class="model-img"></div>
+            <h2 class="glossy">GLOSSY KISS COLLECTION NEW RELEASE</h2>
           </div>
-          <p class="shop-gloss"><a href="./shop.html">Shop this gloss</a></p>
         </section>
+        <p class="shop-gloss"><a href="./shop.html">Shop this gloss</a></p>
       </div>
       <section class="wrap">
         <div class="word">
-          <img src="./image.jpg" alt="" width="300px" />
+          <!-- <div class="profile-img"></div> -->
+           <img class="profile-img" src="./image.jpg" alt="" width="20%">
           <div class="word-one">
             <h2>ABOUT US</h2>
             <p class="text">
@@ -106,7 +114,7 @@
       </section>
       <section class="newsletters">
         <h2 class="newsletter">SUBSCRIBE TO OUR NEWSLETTER</h2>
-        <p class="newsletter">
+        <p class="newsletter-one">
           Be the first to know when a new product drop or when we are having
           sales
         </p>
@@ -127,10 +135,10 @@
             <div>
               <h3>Policy</h3>
               <p>privacy policy</p>
-              <p>Terms and conditions</p>
+              <p>Terms&conditions</p>
             </div>
             <div>
-              <h3>Customer care</h3>
+              <h3 class="h3">Customer care</h3>
               <p class="care">About us</p>
               <p class="care">Contact</p>
             </div>
@@ -153,5 +161,14 @@
         <p class="image-i">&#169; 2024</p>
       </div>
     </div>
+    
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navLink = document.querySelector(".nav-link");
+
+      hamburger.addEventListener("click", function () {
+        navLink.classList.toggle("show-nav");
+      });
+    </script>
   </body>
 </html>
